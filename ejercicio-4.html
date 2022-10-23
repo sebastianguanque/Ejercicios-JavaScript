@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+  
+  <!-- Realizar un programa donde se ingresen 3 notas de un alumno, si el promedio es mayor o igual a 7 mostrar el mensaje “Aprobó”, en su defecto “Desaprobó”. Usar parseInt -->
+
+  <script>
+
+    let nota1 = Number(prompt("Ingrese la primer nota"));
+    let nota2 = Number(prompt("Ingrese la segunda nota"));
+    let nota3 = Number(prompt("Ingrese la tercera nota"));
+
+    let promedio = (nota1 + nota2 + nota3) / 3;
+
+    if(promedio >= 7) {
+      document.write("Aprobó con " + promedio.toFixed(2))
+    }
+
+    else {
+      document.write("Desaprobó con " + promedio.toFixed(2));
+    }
+
+  </script>
+</body>
+</html>
