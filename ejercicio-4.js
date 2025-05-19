@@ -8,9 +8,9 @@ let nota3 = Number(prompt("Ingrese la tercera nota"));
 let promedio = (nota1 + nota2 + nota3) / 3;
 
 if (promedio >= 7) {
-  document.write("Aprobó con " + promedio.toFixed(2))
+  console.log("Aprobó con " + promedio.toFixed(2))
 }
 
 else {
-  document.write("Desaprobó con " + promedio.toFixed(2));
+  console.log("Desaprobó con " + promedio.toFixed(2));
 }

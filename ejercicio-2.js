@@ -3,4 +3,4 @@
 let empleado = prompt("Nombre del empleado");
 let sueldo = Number(prompt("Sueldo del empleado"));
 
-document.write("El empleado " + empleado + " tiene un sueldo de $" + sueldo);
+console.log("El empleado " + empleado + " tiene un sueldo de $" + sueldo);

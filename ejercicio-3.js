@@ -7,6 +7,6 @@ let num4 = Number(prompt("Ingrese el cuarto número"));
 let suma = num1 + num2 + num3 + num4;
 let producto = num1 * num2 * num3 * num4;
 
-document.write("La suma de los números es: " + suma + "<br>");
-document.write("El producto de los números es: " + producto);
+console.log("La suma de los números es: " + suma + "<br>");
+console.log("El producto de los números es: " + producto);
 
