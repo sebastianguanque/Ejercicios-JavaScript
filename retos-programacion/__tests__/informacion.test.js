@@ -14,10 +14,10 @@ describe("Diccionario de información personal", () => {
   });
 
   test("La clave 'programming_languages' debe ser un Array (Lista)", () => {
-    // 1. Verificamos que el valor es un Array
+    // 1. Verificar que el valor es un Array
     expect(Array.isArray(miInformacion.programming_languages)).toBe(true);
 
-    // 2. Opcional: Verificamos que al menos tiene un elemento
+    // 2. Verificar que al menos tiene un elemento
     expect(miInformacion.programming_languages.length).toBeGreaterThan(0);
   });
 

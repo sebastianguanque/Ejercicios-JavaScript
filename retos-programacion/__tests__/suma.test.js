@@ -1,5 +1,5 @@
 // Paso 0: Importar la función que vamos a probar
-const { suma } = require("../13-suma");
+const { suma } = require("../ejercicio-13");
 
 // Paso 2: Escribir los casos de prueba
 
