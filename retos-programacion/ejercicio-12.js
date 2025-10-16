@@ -1,5 +1,5 @@
 /**
- * SON (JavaScript Object Notation) 👨
+ * SON (JavaScript Object Notation)
 
   JSON es un formato de texto ligero y fácil de leer.  Su sintaxis se basa en la de los objetos de JavaScript, lo que lo hace muy popular entre los desarrolladores web.
 

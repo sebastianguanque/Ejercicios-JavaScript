@@ -4,26 +4,22 @@ const NOMBRE_ARCHIVO = "ventas.txt";
 
 // Lógica para verificar si el archivo existe
 if (!fs.existsSync(NOMBRE_ARCHIVO)) {
-  // Si no existe, lo creas con contenido inicial o vacío.
+  // Si no existe, se crea con contenido inicial o vacío.
   try {
     fs.writeFileSync(NOMBRE_ARCHIVO, "");
     console.log(`Archivo '${NOMBRE_ARCHIVO}' creado con éxito.`);
   } catch (error) {
     console.log(`Error al crear el archivo: ${error}`);
-    // Podrías salir del programa aquí si el archivo no se puede crear
+    // Se puede salir del programa aca si el archivo no se puede crear
     process.exit(1);
   }
 }
 
-// Bucle principal para interactuar con el usuario
-// y el resto de la lógica de gestión de ventas.
+// Bucle principal para interactuar con el usuario y el resto de la lógica de gestión de ventas.
 
 let activo = true;
 
 while (activo) {
-  // Aquí iría el código para mostrar el menú y manejar las opciones
-  // como añadir, consultar, actualizar, eliminar productos, calcular ventas, etc.
-
   let consultaUsuario = prompt(
     "Seleccione una opción: 1. añadir, 2. consultar, 3. actualizar, 4. eliminar, 5. calcular_total, 6. calcular_por_producto, 7. salir "
   );
@@ -45,7 +41,6 @@ while (activo) {
       if (opcionConsulta === "1") {
         let productos = leerProductos();
         console.log("Productos en el archivo:");
-        // Asegúrate de manejar el caso donde el archivo está vacío.
         if (productos.length === 0) {
           console.log("No hay productos registrados.");
         } else {
@@ -63,7 +58,7 @@ while (activo) {
 
         if (productoEncontrado) {
           console.log("Producto encontrado:");
-          console.table([productoEncontrado]); // El `console.table` funciona mejor con arrays.
+          console.table([productoEncontrado]);
         } else {
           console.log(`El producto '${nombreProducto}' no fue encontrado.`);
         }
